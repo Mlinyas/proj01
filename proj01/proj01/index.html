@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GitHelp</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="assets/images/logo-githelp.jpeg">
+
+<script src="js/script.js" defer></script>
+</head>
+<body>
+
+    <header class="pesquisa">
+        <div class="logo">
+            <img src="assets/images/logo-githelp.jpeg" alt="Logo do GitHelp">
+        </div>
+    <div class="decoracoes-espaco"></div>
+    
+        <span class="estrela">★</span>
+        <span class="estrela">★</span>
+        <span class="estrela">★</span>
+        <span class="estrela">★</span>
+        <span class="estrela">★</span>
+
+
+    <div class="conteudo-banner">
+        <h1>Bem-vindo ao GitHelp</h1>
+        <p>Seu guia para Git e GitHub</p>
+        <h2>PESQUISA</h2>
+
+
+            <div class="barra-pesquisa">
+
+                <input
+                    type="text"
+                    id="campo-pesquisa"
+                    placeholder="Digite um comando Git..."
+                >
+
+                <button id="botao-pesquisa">
+                    Pesquisar
+                </button>
+
+            </div>
+
+            <p id="resultado-pesquisa"></p>
+    </div>
+
+    </header>
+
+
+    <main>
+
+        <section class="conteudo">
+
+            <section class="sobre">
+
+                <h2>SOBRE</h2>
+
+                <p>
+                    O GitHelp é um site para ajudar iniciantes
+                    na computação a aprender comandos de Git/GitHub.
+                </p>
+
+            </section>
+
+
+            <section class="card">
+
+                <h2>COMANDOS PRINCIPAIS</h2>
+
+                <p>
+                    Comandos importantes do Git.
+                </p>
+
+                <button id="comandos-btn">
+                    Ver comandos
+                </button>
+
+                <div id="lista-comandos"></div>
+
+            </section>
+
+            <section class="card">
+
+                <h2>GUIA RÁPIDO</h2>
+
+                <p>
+                    Aprenda os primeiros passos para começar
+                    a usar Git.
+                </p>
+
+                <button id="guia-btn">
+                    Ver guia
+                </button>
+
+                <div id="guia"></div>
+
+            </section>
+
+            <section class="card git-pratica">
+
+                <h2>GIT NA PRÁTICA</h2>
+
+
+                <button class="codigo-btn">
+                    GIT INIT
+                </button>
+
+                <div class="codigo-conteudo">
+
+                    <p>
+                        Esse comando Cria um novo repositório Git
+                        dentro da pasta do seu projeto. 
+                        Aqui está como usar o git init de forma básica:
+
+                        git init
+                        Para criar um novo repositório enquanto especifica o nome do projeto, use o seguinte comando:
+
+                        git init [nome do projeto]
+                    </p>
+
+                    <img
+                        src="assets/images/git-init.webp"
+                        alt="Comando git init sendo usado"
+                    >
+
+                </div>
+
+
+                <button class="codigo-btn">
+                    GIT ADD
+                </button>
+
+                <div class="codigo-conteudo">
+
+                    <p>
+                        Esse comando adiciona os arquivos que você deseja
+                        incluir no próximo commit:
+
+                   git add nome_do_arquivo
+                    </p>
+
+                    <img
+                        src="assets/images/git-add.jpg"
+                        alt="Comando git add sendo usado"
+                    >
+
+                </div>
+
+
+                <button class="codigo-btn">
+                    GIT COMMIT
+                </button>
+
+                <div class="codigo-conteudo">
+
+                    <p>
+                        Salva as alterações adicionadas
+                        em uma nova versão do projeto:
+                        git commit -m "Adicionar novo recurso"
+                    </p>
+
+                    <img
+                        src="assets/images/git-commit.jpg"
+                        alt="Comando git commit sendo usado"
+                    >
+
+                </div>
+
+
+                <button class="codigo-btn">
+                    GIT PUSH
+                </button>
+
+                <div class="codigo-conteudo">
+
+                    <p>
+                        Envia os commits do seu computador
+                        para o repositório no GitHub.
+                        Por exemplo, se você deseja enviar as das alterações do repositório local chamado para o repositório remoto chamado “origem”:
+                        git push origem principal
+                    </p>
+
+                    <img
+                        src="assets/images/git-push.png"
+                        alt="Comando git push sendo usado"
+                    >
+
+                </div>
+
+            </section>
+
+            <section class="card">
+
+                <h2>VÍDEO DO BÁSICO DO GITHUB</h2>
+
+                <p>
+                    Aprenda GitHub através de um vídeo.
+                </p>
+
+                <button id="video-btn">
+                    Assistir
+                </button>
+
+            </section>
+
+
+        </section>
+
+    </main>
+
+    <footer>
+        EM PROCESSO/ùltima atualizaçao(2*out*2026/11:03)
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,270 @@
+@font-face {
+  font-family: 'Minecraft';
+  src: url('../assets/fonts/Minecraft.ttf') format('truetype');
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Minecraft', sans-serif;
+    background-image: url('../assets/images/space.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    color:#9cd9fe;
+    
+
+}
+h1 {
+  font-family: 'Minecraft', sans-serif;
+}
+
+.logo {
+    display: flex;
+
+    align-items: center;
+
+    gap: 50px;
+}
+
+.logo img {
+    width: 120px;
+    height: 120px;
+object-fit: contain;
+}
+
+.logo h1 {
+    margin: 0;
+
+    color: #149bef;
+
+    letter-spacing: 8px;
+}
+
+main {
+    width: 90%;
+    max-width: 1100px;
+
+    margin: 30px auto;
+}
+
+
+.pesquisa {
+    border: 2px solid #9f14ef;
+    margin-bottom: 25px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    padding: 60px 30px;
+    background: #050505;
+    box-shadow:
+        0 0 10px #6a00ff,
+        0 0 25px #0066ff;
+
+}
+
+.pesquisa h2 {
+    color: #b8ff16;
+
+    letter-spacing: 5px;
+}
+
+.barra-pesquisa {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 10px;
+}
+
+.pesquisa input {
+    width: 70%;
+
+    padding: 12px;
+
+    border: 2px solid #9f14ef;
+
+    background-color: #08162a;
+
+    color: #9cd9fe;
+
+    font-size: 16px;
+}
+
+button {
+    padding: 12px 18px;
+
+    border: none;
+
+    background-color: #b8ff16;
+
+    color:#b88ff3;
+
+    cursor: pointer;
+
+    font-weight: bold;
+    box-shadow:
+        0 0 10px #6a00ff,
+        0 0 25px #0066ff
+}
+
+button:hover {
+    background-color: #149bef;
+
+    color: #b8ff16;
+}
+
+#resultado-pesquisa {
+    margin-top: 20px;
+
+    color: #b8ff16;
+
+    font-weight: bold;
+}
+
+.conteudo {
+    display: grid;
+
+    grid-template-columns: 1fr 2fr;
+
+    gap: 20px;
+}
+
+
+.sobre,
+.card {
+    background-color: #091d3a;
+
+    border: 2px solid #9f14ef;
+
+    padding: 25px;
+}
+
+.sobre h2,
+.card h2 {
+    color: #b8ff16;
+
+    letter-spacing: 3px;
+}
+
+.sobre p,
+.card p {
+    line-height: 1.6;
+}
+
+.card button {
+    margin-top: 10px;
+}
+
+
+#lista-comandos {
+    margin-top: 20px;
+}
+
+#lista-comandos p {
+    background-color: #050b18;
+
+    padding: 10px;
+
+    border-left: 3px solid #149bef;
+
+    color: #b8ff16;
+}
+#guia {
+    margin-top: 20px;
+}
+
+#guia p {
+    background-color: #050b18;
+
+    padding: 10px;
+
+    border-left: 3px solid #b8ff16;
+}
+
+.git-pratica {
+    grid-column: 1 / -1;
+}
+
+.codigo-btn {
+    display: block;
+
+    width: 100%;
+
+    margin-top: 15px;
+
+    text-align: left;
+}
+
+.codigo-conteudo {
+    display: none;
+
+    padding: 15px;
+
+    background-color: #050b18;
+
+    border-left: 3px solid #149bef;
+}
+
+.codigo-conteudo img {
+    width: 100%;
+
+    max-width: 700px;
+
+    display: block;
+
+    margin-top: 15px;
+
+    border: 2px solid #149bef;
+}
+
+@media (max-width: 700px) {
+
+    .conteudo {
+        grid-template-columns: 1fr;
+    }
+
+    .git-pratica {
+        grid-column: auto;
+    }
+
+    .barra-pesquisa {
+        flex-direction: column;
+    }
+
+    .pesquisa input {
+        width: 100%;
+    }
+
+    .logo {
+        gap: 20px;
+    }
+
+}
+
+.banner {
+    position: relative;
+    overflow: hidden;
+
+    padding: 60px 30px;
+    border: 2px solid #6a00ff;
+    border-radius: 20px;
+
+    background: #050505;
+
+    box-shadow:
+        0 0 10px #6a00ff,
+        0 0 25px #0066ff;
+
+}
+
+/* conteúdo fica por cima das decorações */
+
+.conteudo-banner {
+    position: relative;
+    z-index: 2;
+}
